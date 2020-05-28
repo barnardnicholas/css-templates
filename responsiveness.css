@@ -1,0 +1,27 @@
+/* Intelligent breakpoints from mobile to very large desktop - CSS Version
+Original article: https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
+
+/* Portrait Phones upwards
+/*-------------------------------------------------- */
+@media (max-width: 599px) {
+}
+
+/* Portrait Tablets upwards
+/*-------------------------------------------------- */
+@media (min-width: 600px) {
+}
+
+/* Landscape Tablets upwards
+/*-------------------------------------------------- */
+@media (min-width: 900px) {
+}
+
+/* Desktop upwards
+/*-------------------------------------------------- */
+@media (min-width: 1200px) {
+}
+
+/* Large Desktop upwards
+/*-------------------------------------------------- */
+@media (min-width: 1800px) {
+}

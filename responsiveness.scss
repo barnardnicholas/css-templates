@@ -1,0 +1,51 @@
+// Intelligent breakpoints from mobile to very large desktop
+// Original article: https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+
+/* Portrait Phones upwards
+/*-------------------------------------------------- */
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+/* Portrait Tablets upwards
+/*-------------------------------------------------- */
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+/* Landscape Tablets upwards
+/*-------------------------------------------------- */
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+/* Desktop upwards
+/*-------------------------------------------------- */
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+/* Large Desktop upwards
+/*-------------------------------------------------- */
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// Mixin usage
+.my-box {
+  padding: 10px;
+
+  @include for-desktop-up {
+    padding: 20px;
+  }
+}
